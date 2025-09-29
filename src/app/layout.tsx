@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inconsolata } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/lib/theme/themeprovider";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const inconsolata = Inconsolata({
   variable: "--font-inconsolata",
@@ -19,15 +22,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inconsolata.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );
