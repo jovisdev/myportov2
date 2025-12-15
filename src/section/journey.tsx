@@ -39,7 +39,7 @@ export default function Journey(){
 
                 {activeId && pinPositions[activeId] && (
                 <div
-                    className={`absolute hover:scale-110 transition-all duration-100`}
+                    className={`absolute hover:scale-110 transition-all duration-100 hidden md:block`}
                     style={pinPositions[activeId]}
                 >
                     <LocationPinIcon sx={{ fontSize: "35px", color: "red" }}/>

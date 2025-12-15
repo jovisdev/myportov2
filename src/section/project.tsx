@@ -9,13 +9,15 @@ export default function Project(){
 
     return(
         <SectionWrapper>
-            <div id="works" className="mb-4 md:mb-0">
-                <Typography variant="h6" mobileVariant="sub1" weight="bold" as="h1">
-                    Projects
-                </Typography>
-                <Typography variant="bd3" mobileVariant="sub2" weight="semibold">
-                    contributions and what I have made.
-                </Typography>
+            <div id="works" className="mb-4 md:mb-0 flex flex-col space-y-4">
+                <div>
+                    <Typography variant="h6" mobileVariant="sub1" weight="bold" as="h1">
+                        Projects
+                    </Typography>
+                    <Typography variant="bd3" mobileVariant="sub2" weight="semibold">
+                        contributions and what I have made.
+                    </Typography>
+                </div>
                 <div className="grid sm:grid-cols-5 gap-2">
                     {projects.map((item) => (
                         <div key={item.id}>

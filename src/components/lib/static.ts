@@ -86,8 +86,14 @@ export const dataProjects = [
         {
         id: 6,
         image: "/assets/images/p6.png",
-        description : "IT Services Website",
+        description : "IT Services Website.",
         link: "techera.id"
+    },
+    {
+        id: 7,
+        image: "/assets/images/p7.png",
+        description : "How will the heirs sign the document if they are far away from it? I, along with the stakeholders, managed to resolve this issue.",
+        link: "https://https://risol-nu.vercel.app/"
     },
 ]
 

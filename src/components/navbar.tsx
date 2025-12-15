@@ -1,5 +1,4 @@
 "use client";
-import SectionWrapper from "./lib/section-wrapper";
 import Typography from "./lib/typography";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -41,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div className="border-b fixed w-full z-60 bg-white dark:bg-black">
-      <SectionWrapper>
+      <div className="mx-auto flex max-w-[1536px] flex-col gap-y-4 !overflow-hidden px-6 md:py-4 lg:px-16">
         <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Typography variant="sub1" mobileVariant="sub2" weight="bold">
@@ -105,7 +104,7 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-      </SectionWrapper>
+      </div>
     </div>
   );
 }

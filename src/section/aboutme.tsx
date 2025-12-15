@@ -59,18 +59,18 @@ export default function Aboutme(){
 
                     {/* float icon */}
                     <div className="hidden md:block">
-                    <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? '-translate-x-30 -translate-y-30' : ''}`}>
-                        <CodeIcon sx={{ fontSize: "50px" }}/>
-                    </div>
-                    <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? '-translate-x-20 -translate-y-50' : ''}`}>
-                        <StorageIcon sx={{ fontSize: "50px" }}/>
-                    </div>
-                    <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? 'translate-x-40 -translate-y-50' : ''}`}>
-                        <CloudCircleIcon sx={{ fontSize: "50px" }}/>
-                    </div>
-                    <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? 'translate-x-50 -translate-y-20' : ''}`}>
-                        <WorkIcon sx={{ fontSize: "50px" }}/>
-                    </div>
+                        <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? '-translate-x-30 -translate-y-30' : ''}`}>
+                            <CodeIcon sx={{ fontSize: "50px" }}/>
+                        </div>
+                        <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? '-translate-x-20 -translate-y-50' : ''}`}>
+                            <StorageIcon sx={{ fontSize: "50px" }}/>
+                        </div>
+                        <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? 'translate-x-40 -translate-y-50' : ''}`}>
+                            <CloudCircleIcon sx={{ fontSize: "50px" }}/>
+                        </div>
+                        <div className={`absolute top-60 left-60 transition duration-300 ${clicked ? 'translate-x-50 -translate-y-20' : ''}`}>
+                            <WorkIcon sx={{ fontSize: "50px" }}/>
+                        </div>
                     </div>
 
                     <div className="absolute z-50 bottom-20 left-20 border rounded-lg bg-black text-white dark:bg-white dark:text-black cursor-pointer transform transition-all hover:translate-x-0.5 hover:translate-y-0.5">
